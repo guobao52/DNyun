@@ -73,6 +73,46 @@
       description: 一线的APP推广项目分发和流量变现平台
 
 
+- taxonomy: OPC核心平台
+  icon: fa-solid fa-rocket
+  list:
+    - term: 综合服务平台
+      links:
+        - title: OPC社区（云上栏山）
+          url: https://www.hnysls.cn/
+          description: 湖南云上栏山数据服务有限公司支持设立，提供算力支撑、合规指导、融资对接、场景落地等全链路服务，赋能AI个体创业。
+        - title: WeOPC 全国一站式平台
+          url: https://weopc.com.cn/
+          description: 连接全国OPC社区，覆盖26+城市136个社区，提供免费工位、算力补贴、项目投资、订单对接等全周期创业支持。
+        - title: OPC社区网
+          url: https://www.opczone.cn/
+          description: AI创新创业赋能平台，集算力服务、项目路演、创业加速、课程培训、活动对接于一体的一站式创业服务平台。
+        - title: OPC一站式服务平台
+          url: https://opcservice.cn/
+          description: 赋能超级个体，成就一人公司，提供算力补贴、政策申报、创业指导等综合服务。
+        - title: OPC网·一人公司网
+          url: https://opcwang.com/
+          description: 提供一人公司政策、创业指南、赚钱模式与AI算力租赁、智能体工具，助力超级个体单人成军、快速变现。
+        - title: OPC社区服务平台（stepipro）
+          url: https://opc.stepipro.com/
+          description: 为创业者提供一站式综合服务：政策解读与补贴申请、AI模型评测与部署、应用场景对接等。
+        - title: OPC·明途创业平台
+          url: https://opc.mingto.net/
+          description: 提供OPC办公系统、操作平台、创业工坊，打造可复制·可落地·可盈利的一人公司创业生态。
+
+    - term: 社区运营方
+      links:
+        - title: 同橙OPC社区平台
+          url: https://opcstore.com/
+          description: 同橙科创产业发展集团运营，集成多模型AI工具、数字员工矩阵与算力调度分发，全国布局稳步推进。
+        - title: 同橙科创（官网）
+          url: https://www.tongcc.com/
+          description: 经国家市场监督管理总局批准的全国无区域性科创产业集团，以科技成果转化、创新投资与生态构建为核心使命。
+        - title: 罗普特·同橙OPC社区
+          url: https://www.ropeok.com/show_2248.aspx
+          description: 罗普特（688619）联合同橙科创打造，以AI算力赋能沪滇产业，构建"单人成军"新型创业生态。
+
+
 - taxonomy: 社区咨询
   icon: fa-regular fa-newspaper
   links: 
