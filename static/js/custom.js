@@ -101,13 +101,18 @@
 
     /* ---------- 5) 搜索类型切换按钮显示当前分类名 ----------
        左侧 .s-type > span 原本为空，导致显示成空白方块。
-       这里把它同步为当前激活分组的 .type-text 文字（如“常用”）。 */
+       这里把它同步为当前激活分组的 .type-text 文字（如“常用”）。
+       注意：先清空，避免和旧内容叠加成“常常用”。 */
     function syncSearchTypeLabel() {
-      var $active = $('.search-group').filter(function () {
+      var text = $('.search-group').filter(function () {
         return $(this).css('display') !== 'none';
-      }).first();
-      var text = $active.find('.type-text').text().trim();
-      if (text) $('.s-type > span').text(text);
+      }).first().find('.type-text').text().trim();
+
+      if (text) {
+        $('.s-type > span').each(function () {
+          $(this).empty().text(text);
+        });
+      }
     }
     syncSearchTypeLabel();
     $(document).on('change', 'input[name="type"]', syncSearchTypeLabel);
