@@ -32,8 +32,8 @@
                     <!-- logo -->
                     <div class="logo">
                         <a href="./" class="logo-expanded" >
-                            <span class="logo-text"><b>DN云</b><span class="logo-sub">导航站</span></span>
-                            &nbsp&nbsp{{ .Site.Title }}
+                            <span class="logo-mark">DN</span>
+                            <span class="logo-text"><b>DN云</b><span class="logo-sub">一站式资源导航</span></span>
                         </a>
                         <a href="./" class="logo-collapsed">
                             <img src="./images/logo.png" height="40" alt="">
@@ -46,7 +46,7 @@
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
-                    {{ range .Site.Data.webstack }}
+                    {{ range hugo.Data.webstack }}
                     {{ if .list }}
                         <li>
                             <a>
@@ -98,7 +98,7 @@
             <li>
               <div id="he-plugin-simple"></div>
               <script>WIDGET = {CONFIG: {"modules": "12034","background": 5,"tmpColor": "aaa","tmpSize": 16,"cityColor": "aaa","citySize": 16,"aqiSize": 16,"weatherIconSize": 24,"alertIconSize": 18,"padding": "30px 10px 30px 10px","shadow": "1","language": "auto","borderRadius": 5,"fixed": "false","vertical": "middle","horizontal": "left","key": "a922adf8928b4ac1ae7a31ae7375e191"}}</script>
-              <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+              <script async src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
             </li> 
             <!-- 天气 end -->
       </ul>
@@ -112,14 +112,29 @@
     </div>
 </nav>
 {{ template "search.html" . }}
+<div class="content-toolbar" aria-label="分类显示控制">
+    <div class="content-toolbar__copy">
+        <span class="eyebrow">DN CLOUD DIRECTORY</span>
+        <strong>发现适合你的数字资源</strong>
+        <span>按分类浏览，点击标题即可收起或展开</span>
+    </div>
+    <div class="content-toolbar__actions">
+        <button type="button" class="section-action" id="expand-all-sections"><i class="fa fa-plus"></i> 全部展开</button>
+        <button type="button" class="section-action" id="collapse-all-sections"><i class="fa fa-minus"></i> 全部收起</button>
+    </div>
+</div>
 <div class="sites-list" style="margin-bottom: 8.5rem;">
-{{ range .Site.Data.webstack }}
+{{ range hugo.Data.webstack }}
     {{ if .list }}
         {{ $subicon := .icon }}
         {{ range .list }}
         <!-- {{ .term }} -->
-        <h4 class="text-gray" style="display: inline-block;"><i class="fa {{ $subicon }}" style="margin-right: 27px;" id="{{ md5 .term }}"></i>{{ .term }}</h4>
-            <div class="row">
+        <section class="category-section" data-section-id="{{ md5 .term }}">
+            <button type="button" class="category-toggle" aria-expanded="true" aria-controls="section-{{ md5 .term }}">
+                <span class="category-title"><span class="category-icon"><i class="fa {{ $subicon }}" id="{{ md5 .term }}"></i></span><span>{{ .term }}</span></span>
+                <span class="category-meta"><span class="category-count">{{ len .links }} 个资源</span><i class="fa fa-angle-down category-chevron"></i></span>
+            </button>
+            <div class="category-body row" id="section-{{ md5 .term }}">
             {{ range .links }}
                 {{ if .qrcode }}
                 <div class="xe-card col-xs-6 col-sm-4 col-md-3 qrcode geticon">
@@ -157,13 +172,18 @@
                 {{ end }}
             {{ end }}
             </div>
-        <br />
+        </section>
         <!--END {{ .term }} -->
         {{ end }}
     {{ else }}
+        {{ if .links }}
         <!-- {{ .taxonomy }} -->
-        <h4 class="text-gray" style="display: inline-block;"><i class="fa {{ .icon }}" style="margin-right: 27px;" id="{{ md5 .taxonomy }}"></i>{{ .taxonomy }}</h4>
-            <div class="row">
+        <section class="category-section" data-section-id="{{ md5 .taxonomy }}">
+            <button type="button" class="category-toggle" aria-expanded="true" aria-controls="section-{{ md5 .taxonomy }}">
+                <span class="category-title"><span class="category-icon"><i class="fa {{ .icon }}" id="{{ md5 .taxonomy }}"></i></span><span>{{ .taxonomy }}</span></span>
+                <span class="category-meta"><span class="category-count">{{ len .links }} 个资源</span><i class="fa fa-angle-down category-chevron"></i></span>
+            </button>
+            <div class="category-body row" id="section-{{ md5 .taxonomy }}">
             {{ range .links }}
                 {{ if .qrcode }}
                 <div class="xe-card col-xs-6 col-sm-4 col-md-3 qrcode geticon">
@@ -201,8 +221,9 @@
                 {{ end }}
             {{ end }}
             </div>
-        <br />
+        </section>
         <!--END {{ .taxonomy }} -->
+        {{ end }}
     {{ end }}
     <!-- 友情链接 -->
     {{ if .friend }}
@@ -277,7 +298,7 @@
         $(".geticon").each(function(){
             var url = $(this).find('a').attr('href');
             var apiUrl="https://api.iowen.cn/favicon/"+url.replace(/^https?:\/\//, '').replace(/\/.*$/, '')+".png"
-            if ($(this).find('img').attr('data-src').length === 0) {
+            if (!$(this).find('img').attr('data-src')) {
                 $(this).find('img').attr('data-src', apiUrl);
             }
         })
@@ -386,7 +407,7 @@
 <script type='text/javascript' src='./js/nav.js?ver=2.0.0'></script>
 <script type='text/javascript' src='./js/lazyload.min.js?ver=2.0.0'></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-{{ if .Site.Params.pinyin.enable }}<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.19.0/dist/index.js"></script>{{ end }}
+{{ if .Site.Params.pinyin.enable }}<script src="./js/pinyin-pro-3.19.0.min.js"></script>{{ end }}
 <script type='text/javascript' src='./js/local-search.js'></script>
 <script type='text/javascript' src='./js/custom.js'></script>
 </body>
