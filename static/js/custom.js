@@ -134,7 +134,10 @@
 
     function syncSearchTypeLabel() {
       var text = $(".search-group:visible").first().find(".type-text").text().trim();
-      if (text) $(".s-type > span").text(text);
+      if (text) {
+        var cleanText = text.replace(/\s+/g, "").replace(/(.)\1+/g, "$1");
+        $(".s-type > span").attr("data-label", cleanText).empty();
+      }
     }
 
     reorderSearchEngines();
