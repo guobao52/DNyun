@@ -97,13 +97,6 @@
                 <a href="#" data-toggle="sidebar" ><i class="fa fa-bars"></i></a>
             </li>
       </ul>
-        {{ if .Site.Params.Github.enable }}
-        <ul class="user-info-menu right-links list-inline list-unstyled">
-            <li class="hidden-sm hidden-xs">
-                <a href="{{ .Site.Params.Github.url }}" target="_blank" title="Git Repo"><i class="fa fa-code"></i></a>
-            </li>
-        </ul>
-        {{ end }}
     </div>
 </nav>
 {{ template "search.html" . }}
