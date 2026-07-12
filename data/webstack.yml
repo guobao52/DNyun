@@ -13,7 +13,7 @@
       url: https://kjgx668.blogspot.com/
       description: 资源分享，详细图文教程。
     - title: 全宇宙最便宜的vps
-      logo: images/logos/racknerd.png
+      logo: images/logos/generated/vps.png
       url: https://my.racknerd.com/aff.php?aff=13491
       description: 一年仅10.99每月3T流量17G固态硬盘
     - title: Switch eSIM卡
@@ -59,7 +59,7 @@
       url: https://www.wenshushu.cn/
       description: 传临时文件,大文件、永不限速
     - title: 网络剪贴板
-      logo: images/logos/auto/clipboard-168668520-xyz.png
+      logo: images/logos/generated/clipboard.png
       url: https://clipboard.168668520.xyz/
       description: 提供数据暂存和传送服务
     - title: UUID生成
@@ -68,11 +68,11 @@
       description: UUID在线生成
     - title: 轻抖
       qrcode: 
-      logo: images/logos/qingdou.jpg
+      logo: images/logos/generated/qingdou.png
       url: https://share.qingdouyin.com/app/sub-commission-download/1652420599279?type=&code=EWDJXS/
       description: 涨粉、引流、工具、选品、自购等一站式服务，总有一款适合你！全网达人都在用。
     - title: 流量变现
-      logo:  images/logos/rengtuiban.png
+      logo:  images/logos/generated/traffic.png
       url: https://dt.bd.cn/#/pages/login/register?invite_code=516557
       description: 一线的APP推广项目分发和流量变现平台
 
@@ -83,7 +83,7 @@
     - term: 综合服务平台
       links:
         - title: OPC社区（云上栏山）
-          logo: images/logos/auto/hnysls-cn.png
+          logo: images/logos/generated/yunshang.png
           url: https://www.hnysls.cn/
           description: 湖南云上栏山数据服务有限公司支持设立，提供算力支撑、合规指导、融资对接、场景落地等全链路服务，赋能AI个体创业。
         - title: WeOPC 全国一站式平台
@@ -91,7 +91,7 @@
           url: https://weopc.com.cn/
           description: 连接全国OPC社区，覆盖26+城市136个社区，提供免费工位、算力补贴、项目投资、订单对接等全周期创业支持。
         - title: OPC社区网
-          logo: images/logos/auto/opczone-cn.png
+          logo: images/logos/generated/opczone.png
           url: https://www.opczone.cn/
           description: AI创新创业赋能平台，集算力服务、项目路演、创业加速、课程培训、活动对接于一体的一站式创业服务平台。
         - title: OPC一站式服务平台
@@ -103,11 +103,11 @@
           url: https://opcwang.com/
           description: 提供一人公司政策、创业指南、赚钱模式与AI算力租赁、智能体工具，助力超级个体单人成军、快速变现。
         - title: OPC社区服务平台（stepipro）
-          logo: images/logos/auto/opc-stepipro-com.png
+          logo: images/logos/generated/stepipro.png
           url: https://opc.stepipro.com/
           description: 为创业者提供一站式综合服务：政策解读与补贴申请、AI模型评测与部署、应用场景对接等。
         - title: OPC·明途创业平台
-          logo: images/logos/auto/opc-mingto-net.png
+          logo: images/logos/generated/mingto.png
           url: https://opc.mingto.net/
           description: 提供OPC办公系统、操作平台、创业工坊，打造可复制·可落地·可盈利的一人公司创业生态。
 
@@ -122,7 +122,7 @@
           url: https://www.tongcc.com/
           description: 经国家市场监督管理总局批准的全国无区域性科创产业集团，以科技成果转化、创新投资与生态构建为核心使命。
         - title: 罗普特·同橙OPC社区
-          logo: images/logos/auto/ropeok-com.png
+          logo: images/logos/generated/ropeok.png
           url: https://www.ropeok.com/show_2248.aspx
           description: 罗普特（688619）联合同橙科创打造，以AI算力赋能沪滇产业，构建"单人成军"新型创业生态。
 
@@ -193,7 +193,7 @@
           url: https://weopc.com.cn/policy
           description: 最高1000万算力券补贴，免费使用主流AI开发工具，覆盖全国OPC社区。
         - title: OPC社区网 算力池
-          logo: images/logos/auto/opczone-cn.png
+          logo: images/logos/generated/opczone.png
           url: https://www.opczone.cn/
           description: 汇集深圳、上海等地算力券补贴政策及数据集资源，对AI企业最高可抵扣60%算力费用。
 
@@ -204,7 +204,7 @@
           url: https://weopc.com.cn/marketplace
           description: 连接300+生态伙伴，获取AI漫剧、开发、设计等订单，资源对接一站式服务。
         - title: OPC社区网 服务商
-          logo: images/logos/auto/opczone-cn.png
+          logo: images/logos/generated/opczone.png
           url: https://www.opczone.cn/
           description: 工商代办、财税服务、知识产权、技术服务、设计服务、咨询、投融资、项目申报等全链条创业服务。
 
@@ -261,11 +261,11 @@
           url: https://www.hundun.cn/
           description: 《超级个体计划》出品方，为终身学习者提供200+商业案例及线上线下实战演练。
         - title: OPC社区网 课程中心
-          logo: images/logos/auto/opczone-cn.png
+          logo: images/logos/generated/opczone.png
           url: https://www.opczone.cn/
           description: 华为云码道实战营、UI/UX设计、数字营销实战、深度学习与神经网络等OPC创业课程。
         - title: OPC社区 AI创业训练营
-          logo: images/logos/auto/hnysls-cn.png
+          logo: images/logos/generated/yunshang.png
           url: https://www.hnysls.cn/news
           description: 湖南云上栏山OPC社区定期举办AI创业训练营，含算力实操、政策解读等实战内容。
 
@@ -286,7 +286,7 @@
       url: http://www.zj.xinhuanet.com/20260701/d365fd3ca23c4d0994317423d08358ff/c.html
       description: 杭州举办，发布《全国OPC发展观察报告（2026）》，上城区"鸿鹄汇"为全国首个OPC创业加速社区。
     - title: OPC社区网 近期活动
-      logo: images/logos/auto/opczone-cn.png
+      logo: images/logos/generated/opczone.png
       url: https://www.opczone.cn/
       description: 汇集光谷创业大赛、AI漫剧公开课、深圳通用人工智能大会、OPC社区发布会等活动信息。
     - title: WeOPC 社区入驻
@@ -294,7 +294,7 @@
       url: https://weopc.com.cn/
       description: 免费注册即可加入全国OPC社区网络，享受工位、算力、投资、订单等全周期服务。
     - title: OPC社区（云上栏山）入驻
-      logo: images/logos/auto/hnysls-cn.png
+      logo: images/logos/generated/yunshang.png
       url: https://www.hnysls.cn/member/register
       description: 湖南云上栏山OPC社区入驻通道，500+生态资源、200+政策收录、50+生态伙伴。
 
@@ -307,7 +307,7 @@
       url: https://www.ndrc.gov.cn/wsdwhfz/202605/t20260515_1405211.html
       description: 超20个城市密集出台OPC专项扶持政策，OPC社区在一线城市密集涌现。
     - title: OPC社区网 政策文件
-      logo: images/logos/auto/opczone-cn.png
+      logo: images/logos/generated/opczone.png
       url: https://www.opczone.cn/
       description: 汇集宿城区、宿迁市、徐州市铜山区、南京江北新区等地OPC专项扶持政策文件。
     - title: WeOPC 政策红利
@@ -315,7 +315,7 @@
       url: https://weopc.com.cn/policy
       description: 全国OPC政策汇总，免费工位与政策补贴、算力补贴、项目投资等一站式申报。
     - title: OPC社区（云上栏山）最新政策
-      logo: images/logos/auto/hnysls-cn.png
+      logo: images/logos/generated/yunshang.png
       url: https://www.hnysls.cn/policy
       description: 苏州市AI产业措施、苏州工业园区OPC发展细则、AI创新型企业认定等政策收录。
     - title: 北京市《支持人工智能OPC创新发展行动方案》
@@ -1083,7 +1083,7 @@
           description: create QR codes for free (Logo, T-Shirt, vCard, EPS)
         - title: ezgif
           url: https://ezgif.com
-          logo: images/logos/ezgif.png
+          logo: images/logos/generated/ezgif.png
           description: simple online GIF maker and toolset for basic animated GIF editing.
         - title: Android 9 patch
           url: http://inloop.github.io/shadow4android/
@@ -1326,7 +1326,7 @@
       url: https://nav.iowen.cn/
       description: onenav主题演示站
     - title: 趣导航
-      logo: images/logos/auto/qssily-com.png
+      logo: images/logos/generated/qssily.png
       url: https://qssily.com/
     - title: 404导航
       logo: images/logos/auto/404dh-icu.png
@@ -1348,10 +1348,10 @@
       url: https://liutongxu.github.io/
       description:
     - title: 一为webstack
-      logo: images/logos/auto/webstack-iotheme-cn.png
+      logo: images/logos/generated/webstack.png
       url: https://webstack.iotheme.cn/
     - title: iplaycode
-      logo: images/logos/auto/iplaycode-github-io.png
+      logo: images/logos/generated/iplaycode.png
       url: https://iplaycode.github.io/nav/
       description: iplaycode的demo导航网站
 ---
