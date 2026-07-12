@@ -21,7 +21,7 @@
 <link rel='stylesheet' id='bootstrap-css'  href='./css/bootstrap.css?ver=3.4.1' type='text/css' media='all' />
 <link rel='stylesheet' id='nav-css'  href='./css/nav.css?ver=2.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='custom-css' href='./css/custom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='instagram-light-preview-css' href='./css/instagram-light-preview.css' type='text/css' media='all' />
+<link rel='stylesheet' id='instagram-light-preview-css' href='./css/instagram-light-preview.css?v=20260712-2' type='text/css' media='all' />
 
 <script type='text/javascript' src='./js/jquery-1.11.1.min.js'></script>
 </head>
@@ -119,7 +119,7 @@
         <!-- {{ .term }} -->
         <section class="category-section" data-section-id="{{ md5 .term }}">
             <button type="button" class="category-toggle" aria-expanded="true" aria-controls="section-{{ md5 .term }}">
-                <span class="category-title"><span class="category-icon"><i class="fa {{ $subicon }}" id="{{ md5 .term }}"></i></span><span>{{ .term }}</span></span>
+                <span class="category-title"><span class="category-icon"><i class="fa {{ if .icon }}{{ .icon }}{{ else }}{{ $subicon }}{{ end }}" id="{{ md5 .term }}"></i></span><span>{{ .term }}</span></span>
                 <span class="category-meta"><span class="category-count">{{ len .links }} 个资源</span><i class="fa fa-angle-down category-chevron"></i></span>
             </button>
             <div class="category-body row" id="section-{{ md5 .term }}">
