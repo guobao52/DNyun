@@ -21,7 +21,7 @@
 <link rel='stylesheet' id='bootstrap-css'  href='./css/bootstrap.css?ver=3.4.1' type='text/css' media='all' />
 <link rel='stylesheet' id='nav-css'  href='./css/nav.css?ver=2.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='custom-css' href='./css/custom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='instagram-light-preview-css' href='./css/instagram-light-preview.css?v=20260712-3' type='text/css' media='all' />
+<link rel='stylesheet' id='instagram-light-preview-css' href='./css/instagram-light-preview.css?v=20260712-4' type='text/css' media='all' />
 
 <script type='text/javascript' src='./js/jquery-1.11.1.min.js'></script>
 </head>
@@ -33,11 +33,10 @@
                     <!-- logo -->
                     <div class="logo">
                         <a href="./" class="logo-expanded" >
-                            <span class="logo-mark">DN</span>
-                            <span class="logo-text"><b>DN云</b><span class="logo-sub">一站式资源导航</span></span>
+                            <span class="brand-logo-crop"><img src="./images/dnyun-brand-logo.png?v=20260712" alt="DN云 OPC社区资源导航"></span>
                         </a>
                         <a href="./" class="logo-collapsed">
-                            <img src="./images/logo.png" height="40" alt="">
+                            <span class="brand-logo-icon-crop"><img src="./images/dnyun-brand-icon.png?v=20260712" alt="DN云"></span>
                         </a>
                     </div>
                     <div class="mobile-menu-toggle visible-xs">
@@ -48,6 +47,7 @@
                 </header>
                 <ul id="main-menu" class="main-menu">
                     {{ range hugo.Data.webstack }}
+                    {{ if ne .taxonomy "友情链接" }}
                     {{ if .list }}
                         <li>
                             <a>
@@ -71,7 +71,7 @@
                         </li> 
                     {{ end }}                 
                     {{ end }}
-                    <li class="submit-tag">
+                    {{ end }}
                     {{ if .Site.Params.edit.enable }}
                     <li>
                         <a href="{{ .Site.Params.edit.url }}" target="_blank" rel="noopener noreferrer">
@@ -80,12 +80,6 @@
                         </a>
                     </li>
                     {{ end }}                    
-                    <li>
-                        <a href="./about">
-                            <i class="fa fa-heart fa-fw"></i>
-                            <span class="tooltip-blue">关于本站</span>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
