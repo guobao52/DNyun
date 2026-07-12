@@ -81,6 +81,7 @@
   icon: fa-solid fa-rocket
   list:
     - term: 综合服务平台
+      icon: fa-solid fa-layer-group
       links:
         - title: OPC社区（云上栏山）
           logo: images/logos/generated/yunshang.png
@@ -112,6 +113,7 @@
           description: 提供OPC办公系统、操作平台、创业工坊，打造可复制·可落地·可盈利的一人公司创业生态。
 
     - term: 社区运营方
+      icon: fa-solid fa-users
       links:
         - title: 同橙OPC社区平台
           logo: images/logos/auto/opcstore-com.png
@@ -176,6 +178,7 @@
   icon: fa-solid fa-toolbox
   list:
     - term: AI智能体平台
+      icon: fa-solid fa-robot
       links:
         - title: OpenHex
           logo: images/logos/auto/ithome-com.png
@@ -187,6 +190,7 @@
           description: 集成多模型AI工具、数字员工矩阵与算力调度分发（"算力超市"），为创业者提供全要素资源。
 
     - term: 算力与云服务
+      icon: fa-solid fa-cloud
       links:
         - title: WeOPC 算力补贴
           logo: images/logos/auto/weopc-com-cn.png
@@ -198,6 +202,7 @@
           description: 汇集深圳、上海等地算力券补贴政策及数据集资源，对AI企业最高可抵扣60%算力费用。
 
     - term: 创业服务
+      icon: fa-solid fa-briefcase
       links:
         - title: WeOPC 订单市场
           logo: images/logos/auto/weopc-com-cn.png
@@ -213,6 +218,7 @@
   icon: fa-solid fa-graduation-cap
   list:
     - term: 研究报告
+      icon: fa-solid fa-chart-line
       links:
         - title: 清华大学：2026一人公司（OPC）发展研究报告
           logo: images/logos/auto/sohu-com.png
@@ -236,6 +242,7 @@
           description: AI填平技能洼地，一人公司月入30万实战路径分析，从AI编程工具到流量平台的完整创业生态解剖。
 
     - term: 入门指南
+      icon: fa-solid fa-compass
       links:
         - title: 新手入门：OPC社区是什么，怎么申请（避坑指南）
           logo: images/logos/auto/zhuanlan-zhihu-com.png
@@ -255,6 +262,7 @@
           description: 百度百科OPC词条：AI协同下的全新创业形态，个人可独立完成全流程的创业模式。
 
     - term: 培训课程
+      icon: fa-solid fa-chalkboard-user
       links:
         - title: 混沌学园
           logo: images/logos/auto/hundun-cn.png
